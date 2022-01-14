@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 @SpringBootApplication
-@MapperScan("org.wh.wpm.core.admin.*.mapper,org.wh.wpm.core.api.*.mapper,org.wh.wpm.core.common.*.mapper")
+@MapperScan("com.dearjing.mall.core.admin.*.mapper,com.dearjing.mall.core.api.*.mapper,com.dearjing.mall.core.common.*.mapper")
 @EnableScheduling
 @EnableTransactionManagement
 @EnableWebMvc

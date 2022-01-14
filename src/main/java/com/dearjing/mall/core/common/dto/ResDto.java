@@ -22,4 +22,10 @@ public class ResDto<T> implements Serializable {
         this.msg=msg;
     }
 
+    public ResDto(T res) {
+        this.Data=res;
+        this.code=0;
+        this.msg="";
+    }
+
 }

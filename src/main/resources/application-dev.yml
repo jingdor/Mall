@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/mall
+    username: postgres
+    password: 123456
+server:
+  port: 18000
+logging:
+  level:
+    org:
+      wh:
+        wpm: debug

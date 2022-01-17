@@ -4,6 +4,7 @@ import com.dearjing.mall.boot.utils.MdUtils;
 import com.dearjing.mall.core.api.common.controller.form.LoginForm;
 import com.dearjing.mall.core.api.common.controller.form.SignupForm;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ class AuthServiceImplTest {
 
     @Test
     void login() throws Exception {
+        signup();
         log.info("测试用户登录");
         var form=new LoginForm();
         form.setUsername("test");

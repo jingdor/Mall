@@ -1,24 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : localpg
- Source Server Type    : PostgreSQL
- Source Server Version : 130004
- Source Host           : localhost:5432
- Source Catalog        : mall
- Source Schema         : public
-
- Target Server Type    : PostgreSQL
- Target Server Version : 130004
- File Encoding         : 65001
-
- Date: 14/01/2022 15:23:34
-*/
-
-
--- ----------------------------
--- Table structure for base
--- ----------------------------
 DROP TABLE IF EXISTS "public"."base";
 CREATE TABLE "public"."base" (
   "create_at" timestamp(6),

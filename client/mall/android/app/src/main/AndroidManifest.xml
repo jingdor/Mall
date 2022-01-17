@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mall">
+    package="com.mall.client">
    <application
-        android:label="Mall"
+        android:label="客户端"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

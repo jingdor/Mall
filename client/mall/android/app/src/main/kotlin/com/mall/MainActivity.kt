@@ -1,4 +1,4 @@
-package com.mall
+package com.mall.client
 
 import io.flutter.embedding.android.FlutterActivity
 

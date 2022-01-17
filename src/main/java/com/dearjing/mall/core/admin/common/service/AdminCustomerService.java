@@ -1,5 +1,6 @@
 package com.dearjing.mall.core.admin.common.service;
 
+import com.dearjing.mall.core.admin.common.api.form.CustomerForm;
 import com.dearjing.mall.core.common.entity.Customer;
 
 public interface AdminCustomerService {
@@ -7,8 +8,9 @@ public interface AdminCustomerService {
 
     Object save(Customer form);
 
-    Object query(Customer form);
+    Object query(CustomerForm form);
 
     Object delete(Customer form);
 
+    Object info(Customer form);
 }

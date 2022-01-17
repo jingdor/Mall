@@ -1,10 +1,9 @@
 package com.dearjing.mall.core.admin.common.api;
 
+import com.dearjing.mall.core.admin.common.api.form.UserForm;
 import com.dearjing.mall.core.admin.common.service.AdminUserService;
 import com.dearjing.mall.core.common.dto.ResDto;
 import com.dearjing.mall.core.common.entity.User;
-import com.dearjing.mall.core.common.service.UserService;
-import com.dearjing.mall.core.common.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,11 +26,15 @@ public class AdminUserApi {
         return new ResDto(adminUserService.save(form));
     }
     @RequestMapping(method = RequestMethod.GET, value = "/user/query")
-    public ResDto<?> query(@RequestBody User form) throws Exception {
+    public ResDto<?> query(@RequestBody UserForm form) throws Exception {
         return new ResDto(adminUserService.query(form));
     }
     @RequestMapping(method = RequestMethod.POST, value = "/user/delete")
     public ResDto<?> delete(@RequestBody User form) throws Exception {
         return new ResDto(adminUserService.delete(form));
+    }
+    @RequestMapping(method = RequestMethod.GET, value = "/user/info")
+    public ResDto<?> info(User form) throws Exception {
+        return new ResDto(adminUserService.info(form));
     }
 }

@@ -1,4 +1,4 @@
 package com.dearjing.mall.core.common.service;
 
-public interface Category {
+public interface CustomerService {
 }

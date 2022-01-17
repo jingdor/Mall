@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Mall'),
+      home: MyHomePage(title: '管理端'),
     );
   }
 }
@@ -62,8 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "首页"),
-          BottomNavigationBarItem(icon: Icon(Icons.category), label: "分类"),
-          BottomNavigationBarItem(icon: Icon(Icons.shop), label: "购物车"),
+          BottomNavigationBarItem(icon: Icon(Icons.message), label: "消息"),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "插件"),
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mall_common/mall_api.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Mall',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'Mall'),
+      home: MyHomePage(title: '客户端'),
     );
   }
 }
@@ -65,7 +66,17 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.category), label: "分类"),
           BottomNavigationBarItem(icon: Icon(Icons.shop), label: "购物车"),
         ],
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          var mall_api = new MallApi();
+          mall_api.get("get/order");
+        },
+        child: IconButton(
+          icon: Icon(Icons.data_usage),
+        ),
+      ),
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

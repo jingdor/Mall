@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: dev
   flyway:
     # flyway自动配置 true 开启
     enabled: true
@@ -20,3 +18,7 @@ spring:
     validate-on-migrate: true
     # 版本控制日志表，默认flyway_schema_history,不同系统建议修改改数据
     table: flyway_schema_history
+app:
+  datasource: jdbc:postgresql://localhost:5432/installer
+  user: postgres
+  password: 123456

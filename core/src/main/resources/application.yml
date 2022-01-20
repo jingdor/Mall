@@ -13,3 +13,15 @@ mybatis:
     default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
     map-underscore-to-camel-case: true
 
+
+casbin:
+  enableCasbin: true
+  useSyncedEnforcer: false
+  autoSave: true
+  storeType: jdbc
+  tableName: casbin_rule
+  initializeSchema: create
+  model: classpath:casbin/model.conf
+  useDefaultModelIfModelNotSetting: true
+  policy: classpath:casbin/policy.csv
+  enableWatcher: false

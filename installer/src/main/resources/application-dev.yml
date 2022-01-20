@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: dev
   flyway:
     # flyway自动配置 true 开启
     enabled: true

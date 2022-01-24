@@ -3,8 +3,6 @@ package com.dearjing.mall.boot.utils;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Calendar;
-import java.util.Date;
 
 public class MdUtils {
     static  public String md5(byte[] source) throws NoSuchAlgorithmException {

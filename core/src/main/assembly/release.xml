@@ -20,9 +20,5 @@
                 </fileSet>
     </fileSets>
     <files>
-        <file>
-            <source>README.txt</source>
-            <outputDirectory>/</outputDirectory>
-        </file>
     </files>
 </assembly>

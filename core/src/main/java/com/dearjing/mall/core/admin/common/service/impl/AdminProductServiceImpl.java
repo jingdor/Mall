@@ -3,13 +3,18 @@ package com.dearjing.mall.core.admin.common.service.impl;
 import com.dearjing.mall.core.admin.common.api.form.ProductForm;
 import com.dearjing.mall.core.admin.common.service.AdminProductService;
 import com.dearjing.mall.core.common.entity.Product;
+import com.dearjing.mall.core.common.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class AdminProductServiceImpl implements AdminProductService {
+    @Autowired
+    ProductMapper productMapper;
     @Override
     public Object create(Product form) {
-        return null;
+        productMapper.insert(form);
+        return form;
     }
 
     @Override

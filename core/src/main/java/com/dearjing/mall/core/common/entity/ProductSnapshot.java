@@ -15,4 +15,6 @@ public class ProductSnapshot extends Base {
     Integer productId;
     String name;
     String description;
+    Integer salePrice;
+    Integer saleStatus;
 }

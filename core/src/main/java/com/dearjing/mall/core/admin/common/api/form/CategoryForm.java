@@ -7,5 +7,5 @@ import lombok.Data;
 @Data
 public class CategoryForm extends Category implements PageForm {
     Integer pageNum;
-    Integer pageStart;
+    Integer pageSize;
 }

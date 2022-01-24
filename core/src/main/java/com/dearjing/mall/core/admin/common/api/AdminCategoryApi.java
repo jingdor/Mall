@@ -51,7 +51,7 @@ public class AdminCategoryApi {
     }
     @RequestMapping(method = RequestMethod.GET, value = "/category/query")
     public ResDto<?> query(@RequestBody CategoryForm form) throws Exception {
-        PageHelper.startPage(form.getPageNum(), form.getPageStart());
+        PageHelper.startPage(form.getPageNum(), form.getPageSize());
         PageInfo<Category> pageInfo = new PageInfo<>(categoryService.query(form));
         return new ResDto(pageInfo);
     }

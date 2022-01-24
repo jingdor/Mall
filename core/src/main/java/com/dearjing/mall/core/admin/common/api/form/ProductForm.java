@@ -7,5 +7,5 @@ import lombok.Data;
 @Data
 public class ProductForm extends Product implements PageForm {
     Integer pageNum;
-    Integer pageStart;
+    Integer pageSize;
 }
